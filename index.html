@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica – Box Model</title>
+
+  
+  <style>
+    div > p {
+      border: 2px solid #fabada;
+    }
+      
+    .importante {
+      background-color: red;
+    }
+    .importante ~ p {
+      color: red;
+    }
+  </style>
+
+</head>
+<body>
+
+
+    <div>
+      <p class="importante">Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+        <span>
+          <p>Paragraph 1.1.</p>
+          <p>Paragraph 1.2.</p>
+      </span>
+    </div>
+    <div>
+      <p class="importante">Paragraph 2.1.</p>
+      <p>Paragraph 2.2.</p>
+        <ul>
+          <li><p>Paragraph 2.3.</p></li>
+          <li><p>Paragraph 2.4.</p></li>
+          <li><p>Paragraph 2.5.</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>
